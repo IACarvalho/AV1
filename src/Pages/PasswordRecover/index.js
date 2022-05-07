@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { SafeAreaView, Text, View } from 'react-native'
+import { SafeAreaView} from 'react-native'
 import { Header } from '../../Components/Header'
 import { TextInput, Button } from 'react-native-paper'
 
@@ -15,6 +15,7 @@ const PasswordRecover = ({ navigation }) => {
   const handleButtonPress = () => {
     navigation.navigate('Login')
   }
+  
   return (
     <SafeAreaView style={styles.container}>
       <Header text='Recuperar Senha' goBack={handleGoBack} />
