@@ -9,7 +9,7 @@ const Login = ({ navigation }) => {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [ loading, setLoading ] = useState(false)
-  const [passwordIsNotValid, setPasswordIsNotValid] = useState(true)
+  const [passwordIsNotVisible, setPasswordIsNotValid] = useState(true)
   const [icon, setIcon] = useState('eye')
 
   function handlePasswordVisibility() {
@@ -18,7 +18,7 @@ const Login = ({ navigation }) => {
     } else {
       setIcon('eye')
     }
-    setPasswordIsNotValid(!passwordIsNotValid)
+    setPasswordIsNotValid(!passwordIsNotVisible)
   }
 
   function handleLogin() {
@@ -44,7 +44,7 @@ const Login = ({ navigation }) => {
             placeholder='Senha'
             style={ styles.input }
             value={password}
-            secureTextEntry = {passwordIsNotValid}
+            secureTextEntry = {passwordIsNotVisible}
             right={<TextInput.Icon name={icon} onPress={() => handlePasswordVisibility()} />}
             onChangeText={text => setPassword(text)}
           />
