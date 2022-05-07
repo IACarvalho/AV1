@@ -30,32 +30,34 @@ const Login = ({ navigation }) => {
   }
 
   return (
-    <SafeAreaView style={styles.container}>
-      <Header text='Entrar'/>
-      <View style={ styles.formContainer }>
-        <TextInput 
-          placeholder='E-mail'
-          style={ styles.input }
-          value={email}
-          onChangeText={text => setEmail(text)}
-        />
-        <TextInput
-          placeholder='Senha'
-          style={ styles.input }
-          value={password}
-          secureTextEntry = {passwordIsNotValid}
-          right={<TextInput.Icon name={icon} onPress={() => handlePasswordVisibility()} />}
-          onChangeText={text => setPassword(text)}
-        />
-      </View>
-      <Button
-        style={styles.button}
-        mode="contained"
-        loading={loading}
-        onPress={() => handleLogin()}
-      >
-        Entrar
-      </Button>
+    <View>
+      <SafeAreaView style={styles.container}>
+        <Header text='Entrar'/>
+        <View style={ styles.formContainer }>
+          <TextInput 
+            placeholder='E-mail'
+            style={ styles.input }
+            value={email}
+            onChangeText={text => setEmail(text)}
+          />
+          <TextInput
+            placeholder='Senha'
+            style={ styles.input }
+            value={password}
+            secureTextEntry = {passwordIsNotValid}
+            right={<TextInput.Icon name={icon} onPress={() => handlePasswordVisibility()} />}
+            onChangeText={text => setPassword(text)}
+          />
+        </View>
+        <Button
+          style={styles.button}
+          mode="contained"
+          loading={loading}
+          onPress={() => handleLogin()}
+        >
+          Entrar
+        </Button>
+      </SafeAreaView>
       <View style={styles.buttons}>
         <Button
           onPress={() => navigation.navigate('PasswordRecover')}
@@ -68,7 +70,7 @@ const Login = ({ navigation }) => {
           Criar uma conta
         </Button>
       </View>
-    </SafeAreaView>
+    </View>
   )
 }
 

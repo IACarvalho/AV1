@@ -2,7 +2,7 @@ import { StyleSheet } from 'react-native'
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    height: '90%',
     width: '100%',
     backgroundColor: '#f6f6f6',
     justifyContent: 'center',
@@ -26,14 +26,12 @@ const styles = StyleSheet.create({
 
   button: {
     position: 'absolute',
-    bottom: '20%',
+    bottom: '10%',
     width: '40%',
     height: 40,
   },
 
   buttons: {
-    position: 'absolute',
-    bottom: '7%',
     justifyContent: 'space-around'
   },
 })
