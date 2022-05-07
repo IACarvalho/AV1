@@ -1200,7 +1200,7 @@
   resolved "https://registry.yarnpkg.com/@expo/sdk-runtime-versions/-/sdk-runtime-versions-1.0.0.tgz#d7ebd21b19f1c6b0395e50d78da4416941c57f7c"
   integrity sha512-Doz2bfiPndXYFPMRwPyGa1k5QaKDVpY806UJj570epIiMzWaYyCtobasyfC++qfIXVb5Ocy7r3tP9d62hAQ7IQ==
 
-"@expo/vector-icons@^12.0.4":
+"@expo/vector-icons@^12.0.0", "@expo/vector-icons@^12.0.4":
   version "12.0.5"
   resolved "https://registry.yarnpkg.com/@expo/vector-icons/-/vector-icons-12.0.5.tgz#bc508ad05fb7e9a3e008704977cfec6c18aa7728"
   integrity sha512-zWvHBmkpbi1KrPma6Y+r/bsGI6MjbM1MBSe6W9A4uYMLhNI5NR4JtTnqxhf7g1XdpaDtBdv5aOWKEx4d5rxnhg==
@@ -4443,7 +4443,7 @@ prompts@^2.4.0:
     kleur "^3.0.3"
     sisteransi "^1.0.5"
 
-prop-types@^15.5.9, prop-types@^15.6.0, prop-types@^15.7.2:
+prop-types@^15.6.0, prop-types@^15.7.2:
   version "15.8.1"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.8.1.tgz#67d87bf1a694f48435cf332c24af10214a3140b5"
   integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==
@@ -4526,25 +4526,10 @@ react-native-codegen@^0.0.6:
     jscodeshift "^0.11.0"
     nullthrows "^1.1.1"
 
-react-native-hide-show-password-input@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/react-native-hide-show-password-input/-/react-native-hide-show-password-input-1.2.0.tgz#392818235a3dff4f467b741a18f288e16cb4e0d6"
-  integrity sha512-jVYnQ5bXliTI9ayQpOvK9AsB+g7BC+Vkfarze3fBiFSBaluXYaeklxYuHNCx7eMBGgg4VlNyxlryrRqldkRlCw==
-  dependencies:
-    prop-types "^15.7.2"
-    react-native-material-textfield vishaljadav24/react-native-material-textfield
-    react-native-vector-icons "^7.1.0"
-
 react-native-iphone-x-helper@^1.3.1:
   version "1.3.1"
   resolved "https://registry.yarnpkg.com/react-native-iphone-x-helper/-/react-native-iphone-x-helper-1.3.1.tgz#20c603e9a0e765fd6f97396638bdeb0e5a60b010"
   integrity sha512-HOf0jzRnq2/aFUcdCJ9w9JGzN3gdEg0zFE4FyYlp4jtidqU03D5X7ZegGKfT1EWteR0gPBGp9ye5T5FvSWi9Yg==
-
-react-native-material-textfield@vishaljadav24/react-native-material-textfield:
-  version "0.16.1"
-  resolved "https://codeload.github.com/vishaljadav24/react-native-material-textfield/tar.gz/e2d155446ab9057fc7bf6251492fe445d47c07c2"
-  dependencies:
-    prop-types "^15.5.9"
 
 react-native-paper@^4.12.1:
   version "4.12.1"
@@ -4567,20 +4552,6 @@ react-native-screens@~3.10.1:
   dependencies:
     react-freeze "^1.0.0"
     warn-once "^0.1.0"
-
-react-native-vector-icons@^7.1.0:
-  version "7.1.0"
-  resolved "https://registry.yarnpkg.com/react-native-vector-icons/-/react-native-vector-icons-7.1.0.tgz#145487d617b2a81d395d2cf64e6e065fcab3a454"
-  integrity sha512-V2a1zJ4i+kS8O4j183gIwX14St9AxxXabxwYpFBgRhvr2NDXyFcjHDEAgrOYYlt2W57e20aN1tBDU/I+wn9WtQ==
-  dependencies:
-    lodash.frompairs "^4.0.1"
-    lodash.isequal "^4.5.0"
-    lodash.isstring "^4.0.1"
-    lodash.omit "^4.5.0"
-    lodash.pick "^4.4.0"
-    lodash.template "^4.5.0"
-    prop-types "^15.7.2"
-    yargs "^15.0.2"
 
 react-native-web@0.17.1:
   version "0.17.1"
@@ -5663,7 +5634,7 @@ yargs-parser@^18.1.2:
     camelcase "^5.0.0"
     decamelize "^1.2.0"
 
-yargs@^15.0.2, yargs@^15.1.0, yargs@^15.3.1:
+yargs@^15.1.0, yargs@^15.3.1:
   version "15.4.1"
   resolved "https://registry.yarnpkg.com/yargs/-/yargs-15.4.1.tgz#0d87a16de01aee9d8bec2bfbf74f67851730f4f8"
   integrity sha512-aePbxDmcYW++PaqBsJ+HYUFwCdv4LVvdnhBy78E57PIor8/OVvhMrADFFEDh8DHDFRv/O9i3lPhsENjO7QX0+A==

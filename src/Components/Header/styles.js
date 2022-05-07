@@ -10,6 +10,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     position: 'absolute',
     top: 30,
+    flexDirection: 'row',
   },
 
   text: {
@@ -17,6 +18,16 @@ const styles = StyleSheet.create({
     color: '#fff',
     fontWeight: '700',
   },
+
+  logoutIcon: {
+    position: 'absolute',
+    right: 15,
+  },
+
+  backIcon: {
+    position: 'absolute',
+    left: 15,
+  }
 })
 
 export default styles

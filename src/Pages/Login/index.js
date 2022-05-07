@@ -1,8 +1,5 @@
 import { useState } from 'react'
-import { 
-  SafeAreaView,
-  View
-} from 'react-native'
+import { SafeAreaView, View } from 'react-native'
 import { TextInput, Button } from 'react-native-paper'
 import { Header } from '../../Components/Header'
 
@@ -34,7 +31,7 @@ const Login = ({ navigation }) => {
 
   return (
     <SafeAreaView style={styles.container}>
-      <Header text='Login'/>
+      <Header text='Entrar'/>
       <View style={ styles.formContainer }>
         <TextInput 
           placeholder='E-mail'
@@ -56,7 +53,9 @@ const Login = ({ navigation }) => {
         mode="contained"
         loading={loading}
         onPress={() => handleLogin()}
-      >Login</Button>
+      >
+        Entrar
+      </Button>
       <View style={styles.buttons}>
         <Button
           onPress={() => navigation.navigate('PasswordRecover')}
