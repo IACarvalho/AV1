@@ -49,6 +49,7 @@ const Layout = () => {
   useEffect(() => {
     generateData()
   }, [])
+  
   return (
     <SafeAreaView style={styles.container}>
       <Header text = 'Number generator' />
