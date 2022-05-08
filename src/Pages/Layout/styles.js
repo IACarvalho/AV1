@@ -36,11 +36,15 @@ const styles = StyleSheet.create({
   },
 
   contentContainer: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
+    height: 800,
+    width: '100%',
     justifyContent: 'center',
     alignItems: 'center',
-    marginTop: '40%',
+  },
+
+  numbersContainer: {
+    alignItems: 'center',
+    justifyContent: 'center',
   }
 })
 

@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react'
-import { SafeAreaView, Text, View, TouchableOpacity, FlatList } from 'react-native'
+import { useState } from 'react'
+import { View, FlatList, ScrollView } from 'react-native'
 import { Button } from 'react-native-paper'
 
 import styles from './styles'
@@ -56,26 +56,25 @@ const Layout = ({ navigation }) => {
   }
   
   return (
-    <SafeAreaView style={styles.container}>
+    <View style={styles.container}>
       <Header text = 'Sortear Números' logout={handleLogout} />
+        <ScrollView>
+          <FlatList
+            data={data}
+            renderItem={renderItem}
+            keyExtractor={item => item.key}
+            contentContainerStyle={styles.contentContainer}
+          />
+        </ScrollView>
 
-      <FlatList
-        data={data}
-        renderItem={renderItem}
-        keyExtractor={item => item.key}
-        numberOfRows={2}
-        numberOfColumns={4}
-        contentContainerStyle={styles.contentContainer}
-      />
-
-      <Button 
-        style={styles.button}
-        mode="contained"
-        onPress={() => generateData()}
-      >
-        Sortear
-      </Button>
-    </SafeAreaView>
+        <Button 
+          style={styles.button}
+          mode="contained"
+          onPress={() => generateData()}
+        >
+          Sortear
+        </Button>
+    </View>
   )
 }
 

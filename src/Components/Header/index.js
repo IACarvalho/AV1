@@ -28,7 +28,7 @@ const Header = ({ text, goBack = null, logout = null}) => {
           mode="text"
           style={styles.logoutIcon}
           color='#fff' 
-          onPress={() => console.log('Pressed')}
+          onPress={() => logout()}
         >Sair</Button>
       )
     }
