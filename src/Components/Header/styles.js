@@ -21,12 +21,19 @@ const styles = StyleSheet.create({
 
   logoutIcon: {
     position: 'absolute',
-    right: 15,
+    right: 0,
   },
 
   backIcon: {
     position: 'absolute',
     left: 15,
+    alignSelf: 'center',
+    justifyContent: 'center',
+  },
+
+  textIcons: {
+    color: '#025E33',
+    fontWeight: '700',
   }
 })
 

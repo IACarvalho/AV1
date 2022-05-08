@@ -1,5 +1,6 @@
 import { Text, View, TouchableOpacity } from 'react-native'
 import { AntDesign } from '@expo/vector-icons'
+import { Button } from 'react-native-paper'
 
 import styles from './styles'
 
@@ -21,12 +22,14 @@ const Header = ({ text, goBack = null, logout = null}) => {
   function renderLogout() {
     if (logout) {
       return (
-        <TouchableOpacity 
+        <Button 
+          icon="logout"
+          Type="outline" 
+          mode="text"
           style={styles.logoutIcon}
-          onPress={() => logout()}
-        >
-        <AntDesign name="logout" size={24} color="#fff" />
-      </TouchableOpacity>
+          color='#fff' 
+          onPress={() => console.log('Pressed')}
+        >Sair</Button>
       )
     }
   }
@@ -35,7 +38,7 @@ const Header = ({ text, goBack = null, logout = null}) => {
     <View style={styles.container}>
       {renderBack()}
       <Text style={styles.text}>{text}</Text>
-      { renderLogout() }
+      {renderLogout()}
     </View>
   )
 }

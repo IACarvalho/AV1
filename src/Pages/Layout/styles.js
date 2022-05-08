@@ -30,19 +30,9 @@ const styles = StyleSheet.create({
 
   button: {
     width: '60%',
-    height: '10%',
-    backgroundColor: 'green',
-    borderRadius: 10,
-    alignItems: 'center',
-    justifyContent: 'center',
+    height: 40,
     position: 'absolute',
     bottom: '10%',
-  },
-
-  buttonText: {
-    fontSize: 20,
-    color: '#fff',
-    fontWeight: '700',
   },
 
   contentContainer: {

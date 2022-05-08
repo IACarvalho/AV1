@@ -4,18 +4,17 @@ import { StyleSheet } from 'react-native'
 
 const styles = StyleSheet.create({
   container: {
-    height: 70,
-    width: 70,
+    height: 65,
+    width: 65,
     borderRadius: 50,
     alignItems: 'center',
     justifyContent: 'center',
     marginHorizontal: 10,
-    marginVertical: 2,
-    backgroundColor: 'green',
+    marginVertical: 2
   },
 
   number: {
-    fontSize: 15,
+    fontSize: 20,
     color: '#fff',
     fontWeight: '700',
   },

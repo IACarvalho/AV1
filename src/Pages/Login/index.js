@@ -25,7 +25,10 @@ const Login = ({ navigation }) => {
     setLoading(true)
     setTimeout(() => {
       setLoading(false)
-      navigation.navigate('Home')
+      navigation.reset({
+        index: 0,
+        routes: [{ name: 'Home' }],
+      })
     }, 500)
   }
 

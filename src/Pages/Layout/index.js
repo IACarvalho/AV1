@@ -1,12 +1,21 @@
 import { useState, useEffect } from 'react'
 import { SafeAreaView, Text, View, TouchableOpacity, FlatList } from 'react-native'
+import { Button } from 'react-native-paper'
+
 import styles from './styles'
 
 import Ball from '../../Components/Ball'
 import { Header } from '../../Components/Header'
 
-const Layout = () => {
+const Layout = ({ navigation }) => {
   const [data, setData] = useState([])
+
+  function handleLogout() {
+    navigation.reset({
+      index: 0,
+      routes: [{ name: 'Login' }],
+    })
+  }
   
   function getRandom(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -45,14 +54,10 @@ const Layout = () => {
       <Ball number={item.ball} />
     )
   }
-
-  useEffect(() => {
-    generateData()
-  }, [])
   
   return (
     <SafeAreaView style={styles.container}>
-      <Header text = 'Number generator' />
+      <Header text = 'Sortear Números' logout={handleLogout} />
 
       <FlatList
         data={data}
@@ -63,9 +68,13 @@ const Layout = () => {
         contentContainerStyle={styles.contentContainer}
       />
 
-      <TouchableOpacity style={styles.button} onPress={() => generateData()}>
-        <Text style={styles.buttonText}>Gerar</Text>
-      </TouchableOpacity>
+      <Button 
+        style={styles.button}
+        mode="contained"
+        onPress={() => generateData()}
+      >
+        Sortear
+      </Button>
     </SafeAreaView>
   )
 }
